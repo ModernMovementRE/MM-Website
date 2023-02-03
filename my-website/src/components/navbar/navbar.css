@@ -1,0 +1,21 @@
+.logo {
+  max-width: 200px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.bar {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navContainer {
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}

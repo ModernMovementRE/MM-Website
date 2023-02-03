@@ -1,34 +1,24 @@
 import React from "react";
-import "./navbar.css";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import "./navbar.css";
+import Logo from "../../assets/Header Logo Dark Blue & Grey PNG.png";
 
 function Navigation() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">Modern Movement Real Estate</Navbar.Brand>
+    <Navbar className="bar" bg="light" expand="lg">
+      <div className="navContainer">
+        <img className="logo" src={Logo} alt="Modern Movement Logo" />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="nav">
             <Nav.Link href="#home">About</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="#link">Agents</Nav.Link>
+            <Nav.Link href="#link">Contact Us</Nav.Link>
+            <Nav.Link href="#link">MLS</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
+      </div>
     </Navbar>
   );
 }
